@@ -1,0 +1,24 @@
+[2019-01-16 12:06:39.652] [main] [info] update#setState idle
+[2019-01-16 12:06:41.669] [main] [error] update#checkForSnapUpdate(): Could not get realpath of application.
+[2019-01-16 12:07:09.659] [main] [info] update#setState checking for updates
+[2019-01-16 12:07:09.661] [main] [error] Error: ENOENT: no such file or directory, lstat '/snap/code'
+[2019-01-16 12:07:09.661] [main] [info] update#setState idle
+[2019-01-16 12:07:15.022] [main] [error] update#checkForSnapUpdate(): Could not get realpath of application.
+[2019-01-16 13:07:09.688] [main] [info] update#setState checking for updates
+[2019-01-16 13:07:09.690] [main] [error] Error: ENOENT: no such file or directory, lstat '/snap/code'
+[2019-01-16 13:07:09.690] [main] [info] update#setState idle
+[2019-01-16 14:07:09.705] [main] [info] update#setState checking for updates
+[2019-01-16 14:07:09.706] [main] [error] Error: ENOENT: no such file or directory, lstat '/snap/code'
+[2019-01-16 14:07:09.706] [main] [info] update#setState idle
+[2019-01-16 15:07:09.731] [main] [info] update#setState checking for updates
+[2019-01-16 15:07:09.732] [main] [error] Error: ENOENT: no such file or directory, lstat '/snap/code'
+[2019-01-16 15:07:09.732] [main] [info] update#setState idle
+[2019-01-16 16:07:09.751] [main] [info] update#setState checking for updates
+[2019-01-16 16:07:09.752] [main] [error] Error: ENOENT: no such file or directory, lstat '/snap/code'
+[2019-01-16 16:07:09.752] [main] [info] update#setState idle
+[2019-01-16 17:07:09.773] [main] [info] update#setState checking for updates
+[2019-01-16 17:07:09.775] [main] [error] Error: ENOENT: no such file or directory, lstat '/snap/code'
+[2019-01-16 17:07:09.775] [main] [info] update#setState idle
+[2019-01-16 18:07:09.794] [main] [info] update#setState checking for updates
+[2019-01-16 18:07:09.795] [main] [error] Error: ENOENT: no such file or directory, lstat '/snap/code'
+[2019-01-16 18:07:09.795] [main] [info] update#setState idle

@@ -3,16 +3,16 @@ import React from 'react';
 class SearchBar extends React.Component{
     state = {term: ''}
 
-    onFormSubmit = event => {//THIS SINTAXE AVOID ERROR of 'this' undefined 
-        event.preventDefault();
+    onTestFormSubmit = event => {//THIS SINTAXE AVOID ERROR of 'this' undefined 
+        event.preventDefault();//avoid submit form on press Enter key
 
         this.props.rudiSubmit(this.state.term);
     }
-
+    
     render(){
         return (
         <div className="ui segment">
-            <form onSubmit={this.onFormSubmit} className="ui form">
+            <form onSubmit={this.onTestFormSubmit} className="ui form">
                 <div className="field">
                     <label>Image Search</label>
                     <input type="text" 

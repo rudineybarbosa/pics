@@ -1,20 +1,25 @@
 import React from 'react';
-import axios from 'axios';
+import unsplash from '../api/unsplash';
 import SearchBar from './SearchBar';
+import ImageList from './ImageList';
 
 class App extends React.Component {
-    state = { images: []};
+    state = { 
+        images: [],
+        totalPages: 0};
 
-    onSearchSubmit = async term => {
-        const response = await axios
-        .get('https://api.unsplash.com/search/photos', {
+    onSearchSubmit = async (term) => {
+        
+        const response = await unsplash.get('/search/photos', {
             params: { query: term},
-            headers: {
-                Authorization: 'Client-ID 1c28073ba0ae922ffd3a929c4943c725f606c17d706c75b5b7de06b836436d17'}
         });
 
-     //console.log(this);//'this' is this function executing. So this.setState is wrong
-     this.setState({ images: response.data.results });
+     //console.log(this);//'this' is inner this function. 
+     //So 'this' is not referencing class App. Instead, is referencing this function
+
+     this.setState({ 
+        images: response.data.results,
+        totalPages: response.data.total_pages });
     } 
 
     render(){
@@ -22,6 +27,10 @@ class App extends React.Component {
         <div className="ui container" style={{marginTop: '10px'}}>
             <SearchBar rudiSubmit={this.onSearchSubmit}/>
             Found: {this.state.images.length} images
+            <br/>
+            Total Pages: {this.state.totalPages} pages
+
+            <ImageList images={this.state.images}/>
         </div>
     
         ) 
