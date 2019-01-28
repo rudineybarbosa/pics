@@ -6,7 +6,7 @@ Criando um novo projeto
 ### 'npm create-react-app nome--projeto'
 
 Executando VSCode como Administrador
-### sudo code --user-data-dir="~/.vscode-root"
+### sudo code --user-data-dir
 
 Instalar Axios
 ## npm install --save axios
